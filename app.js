@@ -14,19 +14,19 @@ let clickUpgrades = {
     price: 1,
     quantity: 0,
     multiplier: 1
-  }
+  },
 
   drills: {
     price: 4,
     quantity: 0,
     multiplier: 4
-  }
+  },
 
   explosives: {
     price: 2,
     quantity: 0,
     multiplier: 3
-  }
+  },
 
   excavators: {
     price: 3,

@@ -12,5 +12,5 @@ main {
 }
 
 .moon-image {
-  background-image: moon-image.png;
+  background-image: url(moon-image.png);
 }
