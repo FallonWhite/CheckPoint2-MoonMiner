@@ -42,3 +42,12 @@ let automaticUpgrades = {
     multiplier: 20
   }
 };
+
+function checkout() {
+  cart = []
+  drawTotal()
+  drawCart()
+}
+
+
+
