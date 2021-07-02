@@ -16,7 +16,7 @@ let clickUpgrades = {
     multiplier: 1
   }
 
-  drill: {
+  drills: {
     price: 4,
     quantity: 0,
     multiplier: 4
