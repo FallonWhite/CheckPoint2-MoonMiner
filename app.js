@@ -11,36 +11,41 @@ function update(cheese) {
 
 let clickUpgrades = {
   pickaxes: {
-    price: 1,
+    price: 100,
     quantity: 0,
-    multiplier: 1
-  },
+    multiplier: 1,
+    btn btn- primary
+},
 
   drills: {
-    price: 4,
+    price: 125,
     quantity: 0,
-    multiplier: 4
+    multiplier: 2,
+    btn btn - secondary
   },
 
-  explosives: {
-    price: 2,
+explosives: {
+  price: 250,
     quantity: 0,
-    multiplier: 3
-  },
+      multiplier: 4,
+        btn btn - success
+},
 
-  excavators: {
-    price: 3,
+excavators: {
+  price: 1000,
     quantity: 0,
-    multiplier: 5
-  }
+      multiplier: 6,
+        btn btn - info
+}
 };
 
 let automaticUpgrades = {
-  rovers: {
-    price: 600,
+  lasers: {
+    price: 2000,
     quantity: 0,
-    multiplier: 20
-  }
+    multiplier: 20,
+    btn btn- warning
+}
 };
 
 function checkout() {
