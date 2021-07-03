@@ -33,15 +33,15 @@ let clickUpgrades = {
     quantity: 0,
     multiplier: 6
   }
-},
+};
 
-  let automaticUpgrades = {
-    lasers: {
-      price: 2000,
-      quantity: 0,
-      multiplier: 10
-    }
+let automaticUpgrades = {
+  lasers: {
+    price: 2000,
+    quantity: 0,
+    multiplier: 10
   }
+}
 
 function checkout() {
   cart = []
