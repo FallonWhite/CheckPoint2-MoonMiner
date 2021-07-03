@@ -14,7 +14,7 @@ let clickUpgrades = {
     price: 100,
     quantity: 0,
     multiplier: 2
-  }
+  },
 
   drills: {
     price: 125,
@@ -41,7 +41,7 @@ let clickUpgrades = {
       quantity: 0,
       multiplier: 10
     }
-  },
+  }
 
 function checkout() {
   cart = []
