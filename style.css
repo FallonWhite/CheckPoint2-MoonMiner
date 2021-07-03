@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
+  background: url(giphySpace.gif);
 }
 
 main {
