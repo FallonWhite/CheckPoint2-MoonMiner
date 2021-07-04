@@ -14,10 +14,10 @@
 </head>
 
 <body>
-  <header class="container-fluid justify-content-center sticky-top">
+  <header class="container-fluid justify-content-center">
 
     <div class="row text-center">
-      <nav class="navbar sticky-top text-center" style="max-height: 90px;">
+      <nav class="navbar text-center" style="max-height: 90px;">
         <a class="navbar-brand text-center" href="#">
           <h1 class="col-12 justify-content-center text-center mdi mdi-36px mdi-moon-waning-crescent"
             style="font-size: 36px;"> Moon
@@ -33,27 +33,29 @@
         <div class="col-12 justify-content-center">
           <h3>Cheese: <span id="displayCheese">0</span>
           </h3>
-          <div class="row"></div>
+          <div class="row justify-content-around">
+            <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 10rem;">
+              <div class="card-body">
+                <h4 class="card-title">Stats</h4>
+                <p class="card-text">CPS (cheese per second): <span id="cheesePerSecond"> 0</span></p>
+                <p class="card-text">TCM (total cheese multiplier): <span id="totalCheeseMultiplier"> 0</span></p>
+              </div>
+            </div>
 
-          <div class="row d-flex justify-content-space-around">
+            <img class="col-3" src="moon-image.png" onclick="mineMoon()" alt="">
             <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 20rem;">
               <div class="card-body">
-                <h4 class="card-title">Primary card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h4 class="card-title">Inventory</h4>
+                <p class="card-text">Cheese: <span id="cheeseTotal"> 0</span></p>
+                <p class="card-text">Pickaxes: <span id="totalCheeseMultiplier"> 0</span></p>
+                <p class="card-text">Drills: <span id="drillsTotal"> 0</span></p>
+                <p class="card-text">Explosives: <span id="explosivesTotal"> 0</span></p>
+                <p class="card-text">Excavators: <span id="excavatorsTotal"> 0</span></p>
+                <p class="card-text">Lasers: <span id="lasersTotal"> 0</span></p>
               </div>
             </div>
           </div>
-          <img class="col-3" src="moon-image.png" onclick="mineMoon()" alt="">
-          <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 20rem;">
-            <div class="card-body">
-              <h4 class="card-title">Primary card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
         </div>
-
         <div class="row mx-4 my-4"></div>
         <div class="row justify-content-center bg-light text-dark text-center">
           <div class="col-6 text-light margin-5">
