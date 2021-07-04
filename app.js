@@ -44,17 +44,18 @@ let itemsAuto = {
 };
 
 function buy(item) {
-  if (item == "pickaxes" && item.pickaxes.price <= cheese) {
-    cheese = cheese - pickaxesPrice;
-    pickaxesCount = pickaxesCount + 1;
-    multiplier = multiplier * 2;
-  } else if (item == "drills" && item.drills.price <= cheese) {
-    cheese = cheese - drillsPrice;
-    drillsCount = drillsCount + 1;
-    multiplier = multiplier * 3;
-  } else if (item == "explosives" && item.explosives.price <= cheese) {
-    cheese = cheese - explosivesPrice;
-    explosivesCount = explosivesCount + 1;
-    multiplier = multiplier * 4;
-  } console.log(item);
+  //  if (item == "pickaxes" && item.pickaxes.price <= cheese) {
+  //   cheese = cheese - pickaxesPrice;
+  //  pickaxesCount = pickaxesCount + 1;
+  //   multiplier = multiplier * 2;
+  //} else if (item == "drills" && item.drills.price <= cheese) {
+  //  cheese = cheese - drillsPrice;
+  //  drillsCount = drillsCount + 1;
+  //  multiplier = multiplier * 3;
+  //  } else if (item == "explosives" && item.explosives.price <= cheese) {
+  //  cheese = cheese - explosivesPrice;
+  //   explosivesCount = explosivesCount + 1;
+  //  multiplier = multiplier * 4;
+  //  } 
+  console.log(item);
 }
