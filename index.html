@@ -42,7 +42,7 @@
             </div>
 
             <img class="col-3 spin" src="moon-image.png" onclick="mineMoon()" alt="">
-            <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 20rem;">
+            <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: auto;">
               <div class="card-body">
                 <h4 class="card-title">Inventory</h4>
                 <p class="card-text">Cheese: <span id="cheeseTotal"> 0</span></p>
@@ -62,23 +62,23 @@
                 0</span>
             </h4>
             <h5 class="font-weight-bold text-white">Buy Click Upgrades</h5>
-            <button type="button" class="btn btn-primary mx-2 my-2" onclick="pickaxes()">
+            <button type="buyPickaxeButton" class="btn btn-primary mx-2 my-2" onclick="pickaxes()">
               <h5>pickaxes: 100</h5> multiplies
               by 2
             </button>
-            <button type="button" class="btn btn-info mx-2 my-2" onclick="drills()">
+            <button type="buyDrillButton" class="btn btn-info mx-2 my-2" onclick="drills()">
               <h5>drills: 125</h5> multiplies by 3
             </button>
-            <button type="button" class="btn btn-success mx-2 my-2" onclick="explosives()">
+            <button type="buyExplosiveButton" class="btn btn-success mx-2 my-2" onclick="explosives()">
               <h5>explosives: 250</h5> multiplies by
               4
             </button>
             <h5 class="font-weight-bold text-white mx-1 my-1">Buy Automatic Upgrades</h5>
-            <button type="button" class="btn btn-danger mx-2 my-2" onclick="excavators()">
+            <button type="buyExcavatorButton" class="btn btn-danger mx-2 my-2" onclick="excavators()">
               <h5>excavators: 1000</h5> multiplies by
               6
             </button>
-            <button type="button" class="btn btn-dark mx-2 my-2" onclick="lasers()">
+            <button type="buyLaserButton" class="btn btn-dark mx-2 my-2" onclick="lasers()">
               <h5>lasers: 2000</h5> multiplies by 10
             </button>
           </div>

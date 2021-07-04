@@ -8,8 +8,8 @@ function mineMoon() {
 function update(cheese) {
   document.getElementById("displayCheese").innerText = cheese.toString()
 }
-
-let clickUpgrades = {
+/*Click Upgrades*/
+let items = {
   pickaxes: {
     price: 100,
     quantity: 0,
@@ -26,6 +26,14 @@ let clickUpgrades = {
     price: 250,
     quantity: 0,
     multiplier: 4
+  }
+};
+/*automaticUpgrades */
+let itemsAuto = {
+  lasers: {
+    price: 2000,
+    quantity: 0,
+    multiplier: 10
   },
 
   excavators: {
@@ -35,18 +43,17 @@ let clickUpgrades = {
   }
 };
 
-let automaticUpgrades = {
-  lasers: {
-    price: 2000,
-    quantity: 0,
-    multiplier: 10
+function purchase(item) {
+  if (item == "pickaxes") && (pickaxesPrice <= cheese) {
+    cheese = cheese - pickaxesPrice;
+    pickaxesCount = pickaxesCount + 1;
+    multiplier = multiplier * 2;
+  } else if (item == "drills") && (drillsPrice <= cheese) {
+    cheese = cheese - drillsPrice;
+    drillsCount = drillsCount + 1;
+    multiplier = multiplier * 3;
+  } else if (item == "explosives") && (explosivesPrice <= cheese) {
+    cheese = cheese - explosivesPrice;
+    explosivesCount = explosivesCount + 1;
+    multiplier = multiplier * 4;
   }
-}
-
-function checkout() {
-  cart = []
-  drawTotal()
-  drawCart()
-}
-
-

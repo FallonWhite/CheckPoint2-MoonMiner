@@ -20,7 +20,7 @@ main {
 .moon-image {
   background-image: url(moon-image.png);
 }
-
+/*spinning moon*/
   @keyframes spinning {
     from { transform: rotate(0deg) }
     to { transform: rotate(360deg) }
