@@ -43,7 +43,7 @@ let itemsAuto = {
   }
 };
 
-function purchase(item) {
+function buy(item) {
   if (item == "pickaxes") && (pickaxesPrice <= cheese) {
     cheese = cheese - pickaxesPrice;
     pickaxesCount = pickaxesCount + 1;
