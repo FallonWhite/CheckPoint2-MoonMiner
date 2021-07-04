@@ -5,11 +5,16 @@ body {
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  background: url(giphySpace.gif);
+  background-image: url(giphySpace.gif) cover;
 }
 
 main {
   flex-grow: 1;
+}
+
+.moon-box {
+  background-image: url(giphySpace.gif);
+  background-size: cover;
 }
 
 .moon-image {

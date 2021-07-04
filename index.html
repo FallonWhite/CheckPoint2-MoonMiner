@@ -14,19 +14,46 @@
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid d-flex"></div>
+  <header class="container-fluid justify-content-center sticky-top">
+
+    <div class="row text-center">
+      <nav class="navbar sticky-top text-center" style="max-height: 90px;">
+        <a class="navbar-brand text-center" href="#">
+          <h1 class="col-12 justify-content-center text-center mdi mdi-36px mdi-moon-waning-crescent"
+            style="font-size: 36px;"> Moon
+            Miner Click Game <span class="mdi mdi-36px mdi-moon-waxing-crescent"></span></h1>
+        </a>
+      </nav>
+    </div>
+
   </header>
   <main>
-    <div class="container-fluid justify-content-center">
-      <div class="row justify-content-center bg-dark text-dark shadow text-center p-1">
+    <div class="container-fluid justify-content-center moon-box">
+      <div class="row justify-content-center text-dark shadow text-center p-1">
         <div class="col-12 justify-content-center">
-          <h1>Cheese: <span id="displayCheese">0</span>
-          </h1>
-          <div class="row d-flex justify-content-center">
-            <img class="col-md-4" src="moon-image.png" onclick="mineMoon()" alt="">
+          <h3>Cheese: <span id="displayCheese">0</span>
+          </h3>
+          <div class="row"></div>
+
+          <div class="row d-flex justify-content-space-around">
+            <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 20rem;">
+              <div class="card-body">
+                <h4 class="card-title">Primary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <img class="col-3" src="moon-image.png" onclick="mineMoon()" alt="">
+          <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 20rem;">
+            <div class="card-body">
+              <h4 class="card-title">Primary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+            </div>
           </div>
         </div>
+
         <div class="row mx-4 my-4"></div>
         <div class="row justify-content-center bg-light text-dark text-center">
           <div class="col-6 text-light margin-5">
