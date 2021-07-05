@@ -103,7 +103,7 @@ function buyExcavators() {
     itemsAuto.excavators.price += Math.floor(price * 0.3);
     // Updates Rover Template
     document.getElementById('excavators-quantity').innerText = itemsAuto.excavators.quantity.toString();
-    document.getElementById('excavators-price').innerText = "Excavators: " + items.excavators.price.toString() + " 🧀";
+    document.getElementById('excavators-price').innerText = "Excavators: " + itemsAuto.excavators.price.toString() + " 🧀";
     update();
   } else {
     alert('Get youself mo cheese, yo!');
@@ -119,7 +119,7 @@ function buyLasers() {
     itemsAuto.lasers.price += Math.floor(price * 0.3);
     // Updates Laser stuffs
     document.getElementById('laser-quantity').innerText = itemsAuto.lasers.quantity.toString();
-    document.getElementById('lasers-price').innerText = "Lasers: " + items.lasers.price.toString() + " 🧀";
+    document.getElementById('lasers-price').innerText = "Lasers: " + itemsAuto.lasers.price.toString() + " 🧀";
     update();
   } else {
     alert('I need more cheese, Captain!');
