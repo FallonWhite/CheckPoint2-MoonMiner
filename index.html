@@ -30,14 +30,14 @@
     <div class="container-fluid justify-content-center moon-box">
       <div class="row justify-content-center text-dark shadow text-center p-1">
         <div class="col-12 justify-content-center">
-          <h3>Cheese: <span id="displayCheese">0</span>
+          <h3>Cheese: <span id='cheese-quantity'>0</span>
           </h3>
           <div class="row justify-content-around">
-            <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 10rem;">
+            <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: 15rem;">
               <div class="card-body">
                 <h4 class="card-title">Stats</h4>
-                <p class="card-text">CPS (cheese per second): <span id="cheesePerSecond"> 0</span></p>
-                <p class="card-text">TCM (total cheese multiplier): <span id="totalCheeseMultiplier"> 0</span></p>
+                <p class="card-text">CPS (cheese per second): <span id="CPS"> 0</span></p>
+                <p class="card-text">CPC (cheese per click): <span id="CPC"> 0</span></p>
               </div>
             </div>
 
@@ -45,12 +45,12 @@
             <div class="col-3 card border-primary mb-3" style="max-width: 20rem; max-height: auto;">
               <div class="card-body">
                 <h4 class="card-title">Inventory</h4>
-                <p class="card-text">Cheese: <span id="cheeseTotal"> 0</span></p>
-                <p class="card-text">Pickaxes: <span id="totalCheeseMultiplier"> 0</span></p>
-                <p class="card-text">Drills: <span id="drillsTotal"> 0</span></p>
-                <p class="card-text">Explosives: <span id="explosivesTotal"> 0</span></p>
-                <p class="card-text">Excavators: <span id="excavatorsTotal"> 0</span></p>
-                <p class="card-text">Lasers: <span id="lasersTotal"> 0</span></p>
+                <p class="card-text">Cheese: <span id='cheese-quantity'> 0</span></p>
+                <p class="card-text">Pickaxes: <span id="pickaxes-quantity"> 0</span></p>
+                <p class="card-text">Drills: <span id="drills-quantity"> 0</span></p>
+                <p class="card-text">Explosives: <span id="explosives-quantity"> 0</span></p>
+                <p class="card-text">Excavators: <span id="excavators-quantity"> 0</span></p>
+                <p class="card-text">Lasers: <span id="lasers-quantity"> 0</span></p>
               </div>
             </div>
           </div>
@@ -58,28 +58,28 @@
         <div class="row mx-4 my-4"></div>
         <div class="row justify-content-center bg-light text-dark text-center">
           <div class="col-6 text-light margin-5">
-            <h4 class="text-warning">🧀Shopping🧀<br> Cheese available:<span id='totalCheese'>
+            <h4 class="text-warning">🧀Shopping🧀<br> Cheese available:<span id='cheese-quantity'>
                 0</span>
             </h4>
             <h5 class="font-weight-bold text-white">Buy Click Upgrades</h5>
-            <button type="buyPickaxesButton" class="btn btn-primary mx-2 my-2" onclick="buy('pickaxes')">
-              <h5>pickaxes: 100</h5> multiplies
+            <button type="button" class="btn btn-primary mx-2 my-2" onclick="buyPickaxes">
+              <h5>Pickaxes: 100🧀</h5> multiplies
               by 2
             </button>
-            <button type="buyDrillsButton" class="btn btn-info mx-2 my-2" onclick="buy('drills')">
-              <h5>drills: 125</h5> multiplies by 3
+            <button type="button" class="btn btn-info mx-2 my-2" onclick="buyPickaxes">
+              <h5>Drills: 125🧀</h5> multiplies by 3
             </button>
-            <button type="buyExplosivesButton" class="btn btn-success mx-2 my-2" onclick="buy('explosives')">
-              <h5>explosives: 250</h5> multiplies by
+            <button type="button" class="btn btn-success mx-2 my-2" onclick="buyExplosives">
+              <h5>Explosives: 250🧀</h5> multiplies by
               4
             </button>
             <h5 class="font-weight-bold text-white mx-1 my-1">Buy Automatic Upgrades</h5>
-            <button type="buyExcavatorsButton" class="btn btn-danger mx-2 my-2" onclick="buy('excavators')">
-              <h5>excavators: 1000</h5> multiplies by
+            <button type="button" class="btn btn-danger mx-2 my-2" onclick="buyExcavators">
+              <h5>Excavators: 1000🧀</h5> multiplies by
               6
             </button>
-            <button type="buyLasersButton" class="btn btn-dark mx-2 my-2" onclick="buy('lasers')">
-              <h5>lasers: 2000</h5> multiplies by 10
+            <button type="button" class="btn btn-dark mx-2 my-2" onclick="buyLasers">
+              <h5>Lasers: 2000🧀</h5> multiplies by 10
             </button>
           </div>
         </div>
