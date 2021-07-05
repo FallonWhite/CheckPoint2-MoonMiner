@@ -39,8 +39,8 @@ function mineMoon() {
   let pickaxesMultiplier = items.pickaxes.quantity * items.pickaxes.multiplier;
   let drillsMultiplier = items.drills.quantity * items.drills.multiplier;
   let explosivesMultiplier = items.explosives.quantity * items.explosives.multiplier;
-  let excavatorsMultiplier = items.excavators.quantity * items.excavators.multiplier;
-  let lasersMultiplier = items.lasers.quantity * items.lasers.multiplier;
+  let excavatorsMultiplier = itemsAuto.excavators.quantity * itemsAuto.excavators.multiplier;
+  let lasersMultiplier = itemsAuto.lasers.quantity * itemsAuto.lasers.multiplier;
   cheese += 1 + pickaxesMultiplier + drillsMultiplier + explosivesMultiplier + excavatorsMultiplier, lasersMultiplier;
   update();
 }
