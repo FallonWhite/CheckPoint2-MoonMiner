@@ -39,7 +39,9 @@ function mineMoon() {
   let pickaxesMultiplier = items.pickaxes.quantity * items.pickaxes.multiplier;
   let drillsMultiplier = items.drills.quantity * items.drills.multiplier;
   let explosivesMultiplier = items.explosives.quantity * items.explosives.multiplier;
-  cheese += 1 + pickaxesMultiplier + drillsMultiplier + explosivesMultiplier;
+  let excavatorsMultiplier = items.excavators.quantity * items.excavators.multiplier;
+  let lasersMultiplier = items.lasers.quantity * items.lasers.multiplier;
+  cheese += 1 + pickaxesMultiplier + drillsMultiplier + explosivesMultiplier + excavatorsMultiplier, lasersMultiplier;
   update();
 }
 
@@ -56,7 +58,7 @@ function buyPickaxes() {
     items.pickaxes.price += Math.floor(price * 0.3);
     // Updates Excavator stuffs
     document.getElementById('pickaxes-quantity').innerText = items.pickaxes.quantity.toString();
-    document.getElementById('pickaxes-price').innerText = items.pickaxes.price.toString();
+    document.getElementById('pickaxes-price').innerText = "Pickaxes: " + items.pickaxes.price.toString() + " 🧀";
     update();
   } else {
     alert('Get mo cheese, yo!');
@@ -71,7 +73,7 @@ function buyDrills() {
     items.drills.price += Math.floor(price * 0.3);
     // Updates Excavator stuffs
     document.getElementById('drills-quantity').innerText = items.drills.quantity.toString();
-    document.getElementById('drills-price').innerText = items.drills.price.toString();
+    document.getElementById('drills-price').innerText = "Drills: " + items.drills.price.toString() + " 🧀";
     update();
   } else {
     alert('Get mo cheese, yo!');
@@ -85,15 +87,15 @@ function buyExplosives() {
     items.explosives.quantity++;
     items.explosives.price += Math.floor(price * 0.3);
     // Updates Excavator stuffs
-    document.getElementById('drills-quantity').innerText = items.explosives.quantity.toString();
-    document.getElementById('drills-price').innerText = items.explosives.price.toString();
+    document.getElementById('explosives-quantity').innerText = items.explosives.quantity.toString();
+    document.getElementById('explosives-price').innerText = "Explosives: " + items.explosives.price.toString() + " 🧀";
     update();
   } else {
     alert('Get mo cheese, yo!');
   }
 }
 
-function buyExcavator() {
+function buyExcavators() {
   let price = itemsAuto.excavators.price;
   if (cheese >= price) {
     cheese -= price;
@@ -101,23 +103,23 @@ function buyExcavator() {
     itemsAuto.excavators.price += Math.floor(price * 0.3);
     // Updates Rover Template
     document.getElementById('excavators-quantity').innerText = itemsAuto.excavators.quantity.toString();
-    document.getElementById('excavators-price').innerText = itemsAuto.excavators.price.toString();
+    document.getElementById('excavators-price').innerText = "Excavators: " + items.excavators.price.toString() + " 🧀";
     update();
   } else {
     alert('Get youself mo cheese, yo!');
   }
 }
 
-function buyLaser() {
-  console.log("purchased laser")
-  let price = itemsAuto.laser.price;
+function buyLasers() {
+  console.log("purchased lasers")
+  let price = itemsAuto.lasers.price;
   if (cheese >= price) {
     cheese -= price;
-    itemsAuto.laser.quantity++;
-    itemsAuto.laser.price += Math.floor(price * 0.3);
+    itemsAuto.lasers.quantity++;
+    itemsAuto.lasers.price += Math.floor(price * 0.3);
     // Updates Laser stuffs
-    document.getElementById('laser-Quantity').innerText = itemsAuto.laser.quantity.toString();
-    document.getElementById('laser-Price').innerText = itemsAuto.laser.price.toString();
+    document.getElementById('laser-quantity').innerText = itemsAuto.lasers.quantity.toString();
+    document.getElementById('lasers-price').innerText = "Lasers: " + items.lasers.price.toString() + " 🧀";
     update();
   } else {
     alert('I need more cheese, Captain!');
