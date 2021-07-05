@@ -118,7 +118,7 @@ function buyLasers() {
     itemsAuto.lasers.quantity++;
     itemsAuto.lasers.price += Math.floor(price * 0.3);
     // Updates Laser stuffs
-    document.getElementById('laser-quantity').innerText = itemsAuto.lasers.quantity.toString();
+    document.getElementById('lasers-quantity').innerText = itemsAuto.lasers.quantity.toString();
     document.getElementById('lasers-price').innerText = "Lasers: " + itemsAuto.lasers.price.toString() + " 🧀";
     update();
   } else {
