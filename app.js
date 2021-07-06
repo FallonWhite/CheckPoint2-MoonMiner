@@ -131,7 +131,7 @@ function startInterval() {
 
 function collectItemsAuto() {
   let welfareCheese = 0;
-  for (let key in collectItemsAuto) {
+  for (let key in ItemsAuto) {
     welfareCheese += itemsAuto[key].quantity * itemsAuto[key].multiplier;
   }
   cheese += welfareCheese;
