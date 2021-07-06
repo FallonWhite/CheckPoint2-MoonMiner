@@ -126,7 +126,7 @@ function buyLasers() {
   }
 }
 function startInterval() {
-  setInterval(CPS, 3000);
+  setInterval(cheesePerSecondStat, 3000);
 }
 
 function cheesePerSecondStat() {
@@ -134,7 +134,9 @@ function cheesePerSecondStat() {
   for (let key in itemsAuto) {
     CPS += itemsAuto[key].quantity * itemsAuto[key].multiplier * 100;
   }
+  cheese += CPS;
   document.getElementById('CPS').innerText = CPS.toString();
+  update();
 }
 
 function cheesePerClickStat() {
