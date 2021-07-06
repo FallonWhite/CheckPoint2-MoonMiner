@@ -126,17 +126,15 @@ function buyLasers() {
   }
 }
 function startInterval() {
-  setInterval(collectItemsAuto, 3000);
+  setInterval(CPS, 3000);
 }
 
-function collectItemsAuto() {
-  let welfareCheese = 0;
-  for (let key in ItemsAuto) {
-    welfareCheese += itemsAuto[key].quantity * itemsAuto[key].multiplier;
+function cheesePerSecondStat() {
+  let CPS = 0;
+  for (let key in itemsAuto) {
+    CPS += itemsAuto[key].quantity * itemsAuto[key].multiplier * 100;
   }
-  cheese += welfareCheese;
-  document.getElementById('CPS').innerText = welfareCheese.toString();
-  update();
+  document.getElementById('CPS').innerText = CPS.toString();
 }
 
 function cheesePerClickStat() {
