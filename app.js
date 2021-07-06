@@ -132,7 +132,7 @@ function startInterval() {
 function cheesePerSecondStat() {
   let CPS = 0;
   for (let key in itemsAuto) {
-    CPS += itemsAuto[key].quantity * itemsAuto[key].multiplier * 100;
+    CPS += itemsAuto[key].quantity * itemsAuto[key].multiplier * 10;
   }
   cheese += CPS;
   document.getElementById('CPS').innerText = CPS.toString();
